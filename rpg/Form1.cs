@@ -50,13 +50,131 @@ namespace rpg
             Anlabel5arm.Text = "arm" + cheater1.Armor.ToString();
 
         }
+        private void ProgressBarSet()
+        {
+            progressBar1.Maximum = titan1.Hp;
+            progressBar2.Maximum = titan1.Mana;
+            progressBar3.Maximum = titan.Hp;
+            progressBar4.Maximum = titan.Mana;
+            progressBar5.Maximum = invoker1.Hp;
+            progressBar6.Maximum = invoker.Hp;
+            progressBar7.Maximum = invoker.Mana;
+            progressBar8.Maximum = invoker1.Mana;
+            progressBar9.Maximum = sisadmin.Hp;
+            progressBar10.Maximum = sisadmin1.Hp;
+            progressBar11.Maximum = sisadmin.Mana;
+            progressBar12.Maximum = sisadmin1.Mana;
+            progressBar13.Maximum = Ninjos.Hp;
+            progressBar14.Maximum = Ninjos1.Hp;
+            progressBar15.Maximum = Ninjos1.Mana;
+            progressBar16.Maximum = Ninjos.Mana;
+            progressBar17.Maximum = cheater.Hp;
+            progressBar18.Maximum = cheater1.Hp;
+            progressBar19.Maximum = cheater.Mana;
+            progressBar20.Maximum = cheater1.Mana;
+        }
         private void ProgresBarUpdate()
         {
             if(titan1.Hp > 500)
             {
                 titan1.Hp = 500;
             }
+            if (titan.Hp > 500)
+            {
+                titan.Hp = 500;
+            }
+            if (titan1.Hp < 0)
+            {
+                titan1.Hp = 0;
+            }
+            if (titan.Hp < 0)
+            {
+                titan.Hp = 0;
+            }
+            if (invoker.Hp > 500)
+            {
+                invoker.Hp = 500;
+            }
+            if (invoker1.Hp > 500)
+            {
+                invoker1.Hp = 500;
+            }
+            if (invoker.Hp < 0)
+            {
+                invoker.Hp = 0;
+            }
+            if (invoker1.Hp < 0)
+            {
+                invoker1.Hp = 0;
+            }
+            if (sisadmin.Hp < 0)
+            {
+                sisadmin.Hp = 0;
+            }
+            if (sisadmin1.Hp < 0)
+            {
+                sisadmin1.Hp = 0;
+            }
+            if (sisadmin.Hp > 500)
+            {
+                sisadmin.Hp = 500;
+            }
+            if (sisadmin1.Hp > 500)
+            {
+                sisadmin1.Hp = 500;
+            }
+            if (Ninjos.Hp > 500)
+            {
+                Ninjos.Hp = 500;
+            }
+            if (Ninjos1.Hp > 500)
+            {
+                Ninjos1.Hp = 500;
+            }
+            if (Ninjos.Hp < 0)
+            {
+                Ninjos.Hp = 0;
+            }
+            if (Ninjos1.Hp < 0)
+            {
+                Ninjos1.Hp = 0;
+            }
+            if (cheater.Hp < 0)
+            {
+                cheater.Hp = 0;
+            }
+            if (cheater1.Hp < 0)
+            {
+                cheater1.Hp = 0;
+            }
+            if (cheater.Hp > 500)
+            {
+                cheater.Hp = 500;
+            }
+            if (cheater1.Hp > 500)
+            {
+                cheater1.Hp = 500;
+            }
             progressBar1.Value = titan1.Hp;
+            progressBar3.Value = titan.Hp;
+            progressBar2.Value = titan1.Mana;
+            progressBar4.Value = titan.Mana;
+            progressBar5.Value = invoker1.Hp;
+            progressBar6.Value = invoker.Hp;
+            progressBar7.Value = invoker.Mana;
+            progressBar8.Value = invoker1.Mana;
+            progressBar9.Value = sisadmin.Hp;
+            progressBar10.Value = sisadmin1.Hp;
+            progressBar11.Value = sisadmin.Mana;
+            progressBar12.Value = sisadmin1.Mana;
+            progressBar13.Value = Ninjos.Hp;
+            progressBar14.Value = Ninjos1.Hp;
+            progressBar15.Value = Ninjos1.Mana;
+            progressBar16.Value = Ninjos.Mana;
+            progressBar17.Value = cheater.Hp;
+            progressBar18.Value = cheater1.Hp;
+            progressBar19.Value = cheater.Mana;
+            progressBar20.Value = cheater1.Mana;
         }
         Character titan = new Titan(500, 300, 15, 30, 0);
         Character sisadmin = new siskadmin(250, 500, 5, 20, 0);
@@ -127,7 +245,7 @@ namespace rpg
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            progressBar1.Maximum = titan1.Hp;
+            ProgressBarSet();
             LableUpdate();
             ProgresBarUpdate();
         }
