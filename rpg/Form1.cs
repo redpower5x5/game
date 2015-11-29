@@ -14,6 +14,10 @@ namespace rpg
     {
         void LableUpdate()
         {
+            if (titan1.Hp > 500)
+            {
+                titan1.Hp = 500;
+            }
             label1hp.Text = "hp" + titan.Hp.ToString();
             label1mana.Text = "mana" + titan.Mana.ToString();
             label1arm.Text = "arm" + titan.Armor.ToString();
@@ -46,6 +50,14 @@ namespace rpg
             Anlabel5arm.Text = "arm" + cheater1.Armor.ToString();
 
         }
+        private void ProgresBarUpdate()
+        {
+            if(titan1.Hp > 500)
+            {
+                titan1.Hp = 500;
+            }
+            progressBar1.Value = titan1.Hp;
+        }
         Character titan = new Titan(500, 300, 15, 30, 0);
         Character sisadmin = new siskadmin(250, 500, 5, 20, 0);
         Character invoker = new invoker(350, 200, 500, 20, 0);
@@ -59,7 +71,7 @@ namespace rpg
         public Form1()
         {
             InitializeComponent();
-            LableUpdate();
+            
         }
 
         private void button10_Click(object sender, EventArgs e)
@@ -68,6 +80,7 @@ namespace rpg
             targets.Add(titan1);
             listBox1.Items.Add(titan.Skill1(targets));
             LableUpdate();
+            ProgresBarUpdate();
         }
 
         private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
@@ -81,6 +94,7 @@ namespace rpg
             targets.Add(titan1);
             listBox1.Items.Add(invoker.Skill1(targets));
             LableUpdate();
+            ProgresBarUpdate();
         }
 
         private void button11_Click(object sender, EventArgs e)
@@ -89,6 +103,7 @@ namespace rpg
             targets.Add(titan1);
             listBox1.Items.Add(sisadmin.Skill1(targets));
             LableUpdate();
+            ProgresBarUpdate();
 
         }
 
@@ -98,6 +113,7 @@ namespace rpg
             targets.Add(titan1);
             listBox1.Items.Add(Ninjos.Skill1(targets));
             LableUpdate();
+            ProgresBarUpdate();
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -106,6 +122,19 @@ namespace rpg
             targets.Add(titan1);
             listBox1.Items.Add(cheater.Skill1(targets));
             LableUpdate();
+            ProgresBarUpdate();
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            progressBar1.Maximum = titan1.Hp;
+            LableUpdate();
+            ProgresBarUpdate();
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
         }
 
     }
