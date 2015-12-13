@@ -263,6 +263,9 @@ namespace rpg
             button6.Visible = false;
             button4.Visible = false;
             button5.Visible = false;
+            button11.Visible = true;
+            button9.Visible = true;
+            button10.Visible = true;
         }
 
         private void button4_Click(object sender, EventArgs e)
@@ -277,6 +280,9 @@ namespace rpg
             button6.Visible = false;
             button4.Visible = false;
             button5.Visible = false;
+            button11.Visible = true;
+            button9.Visible = true;
+            button10.Visible = true;
         }
 
         private void button5_Click(object sender, EventArgs e)
@@ -291,6 +297,9 @@ namespace rpg
             button6.Visible = false;
             button4.Visible = false;
             button5.Visible = false;
+            button11.Visible = true;
+            button9.Visible = true;
+            button10.Visible = true;
 
         }
 
@@ -305,6 +314,9 @@ namespace rpg
             button3.Visible = false;
             button7.Visible = false;
             button12.Visible = false;
+            button1.Visible = true;
+            button9.Visible = true;
+            button10.Visible = true;
         }
 
         private void button12_Click(object sender, EventArgs e)
@@ -318,6 +330,9 @@ namespace rpg
             button3.Visible = false;
             button7.Visible = false;
             button12.Visible = false;
+            button1.Visible = true;
+            button9.Visible = true;
+            button10.Visible = true;
         }
 
         private void button7_Click(object sender, EventArgs e)
@@ -331,6 +346,9 @@ namespace rpg
             button3.Visible = false;
             button7.Visible = false;
             button12.Visible = false;
+            button1.Visible = true;
+            button9.Visible = true;
+            button10.Visible = true;
         }
 
     }
