@@ -30,9 +30,6 @@ namespace rpg
             label4hp.Text = "hp" + Ninjos.Hp.ToString();
             label4arm.Text = "arm" + Ninjos.Armor.ToString();
             label4mana.Text = "mana" + Ninjos.Mana.ToString();
-            label5hp.Text = "hp" + cheater.Hp.ToString();
-            label5mana.Text = "mana" + cheater.Mana.ToString();
-            label5arm.Text = "arm" + cheater.Armor.ToString();
             Anlabel1hp.Text = "hp" + titan1.Hp.ToString();
             Anlabel1mana.Text = "mana" + titan1.Mana.ToString();
             Anlabel1arm.Text = "arm" + titan1.Armor.ToString();
@@ -45,9 +42,7 @@ namespace rpg
             Anlabel4hp.Text = "hp" + Ninjos1.Hp.ToString();
             Anlabel4arm.Text = "arm" + Ninjos1.Armor.ToString();
             Anlabel4mana.Text = "mana" + Ninjos1.Mana.ToString();
-            Anlabel5hp.Text = "hp" + cheater1.Hp.ToString();
-            Anlabel5mana.Text = "mana" + cheater1.Mana.ToString();
-            Anlabel5arm.Text = "arm" + cheater1.Armor.ToString();
+            
 
         }
         private void ProgressBarSet()
@@ -68,10 +63,7 @@ namespace rpg
             progressBar14.Maximum = Ninjos1.Hp;
             progressBar15.Maximum = Ninjos1.Mana;
             progressBar16.Maximum = Ninjos.Mana;
-            progressBar17.Maximum = cheater.Hp;
-            progressBar18.Maximum = cheater1.Hp;
-            progressBar19.Maximum = cheater.Mana;
-            progressBar20.Maximum = cheater1.Mana;
+           
         }
         private void ProgresBarUpdate()
         {
@@ -91,13 +83,13 @@ namespace rpg
             {
                 titan.Hp = 0;
             }
-            if (invoker.Hp > 500)
+            if (invoker.Hp > 350)
             {
-                invoker.Hp = 500;
+                invoker.Hp = 350;
             }
-            if (invoker1.Hp > 500)
+            if (invoker1.Hp > 350)
             {
-                invoker1.Hp = 500;
+                invoker1.Hp = 350;
             }
             if (invoker.Hp < 0)
             {
@@ -115,21 +107,21 @@ namespace rpg
             {
                 sisadmin1.Hp = 0;
             }
-            if (sisadmin.Hp > 500)
+            if (sisadmin.Hp > 250)
             {
-                sisadmin.Hp = 500;
+                sisadmin.Hp = 250;
             }
-            if (sisadmin1.Hp > 500)
+            if (sisadmin1.Hp > 250)
             {
-                sisadmin1.Hp = 500;
+                sisadmin1.Hp = 250;
             }
-            if (Ninjos.Hp > 500)
+            if (Ninjos.Hp > 300)
             {
-                Ninjos.Hp = 500;
+                Ninjos.Hp = 300;
             }
-            if (Ninjos1.Hp > 500)
+            if (Ninjos1.Hp > 300)
             {
-                Ninjos1.Hp = 500;
+                Ninjos1.Hp = 300;
             }
             if (Ninjos.Hp < 0)
             {
@@ -139,22 +131,7 @@ namespace rpg
             {
                 Ninjos1.Hp = 0;
             }
-            if (cheater.Hp < 0)
-            {
-                cheater.Hp = 0;
-            }
-            if (cheater1.Hp < 0)
-            {
-                cheater1.Hp = 0;
-            }
-            if (cheater.Hp > 500)
-            {
-                cheater.Hp = 500;
-            }
-            if (cheater1.Hp > 500)
-            {
-                cheater1.Hp = 500;
-            }
+            
             progressBar1.Value = titan1.Hp;
             progressBar3.Value = titan.Hp;
             progressBar2.Value = titan1.Mana;
@@ -171,21 +148,19 @@ namespace rpg
             progressBar14.Value = Ninjos1.Hp;
             progressBar15.Value = Ninjos1.Mana;
             progressBar16.Value = Ninjos.Mana;
-            progressBar17.Value = cheater.Hp;
-            progressBar18.Value = cheater1.Hp;
-            progressBar19.Value = cheater.Mana;
-            progressBar20.Value = cheater1.Mana;
+            
         }
+        
         Character titan = new Titan(500, 300, 15, 30, 0);
         Character sisadmin = new siskadmin(250, 500, 5, 20, 0);
-        Character invoker = new invoker(350, 200, 500, 20, 0);
+        Character invoker = new invoker(350, 200, 0, 200, 0);
         Character Ninjos = new Ninjos(300, 400, 3, 100, 0.1);
-        Character cheater = new cheater(99999, 99999, 99999, 9999999, 9999999999);
+        
         Character titan1 = new Titan(500, 300, 15, 30, 0);
         Character sisadmin1 = new siskadmin(250, 500, 5, 20, 0);
-        Character invoker1 = new invoker(350, 200, 500, 20, 0);
+        Character invoker1 = new invoker(350, 200, 0, 20, 0);
         Character Ninjos1 = new Ninjos(300, 400, 3, 100, 0.1);
-        Character cheater1 = new cheater(99999, 99999, 99999, 9999999, 9999999999);
+       
         public Form1()
         {
             InitializeComponent();
@@ -210,6 +185,11 @@ namespace rpg
         {
             List<Character> targets = new List<Character>();
             targets.Add(titan1);
+            targets.Add(Ninjos1);
+            targets.Add(invoker);
+            targets.Add(invoker1);
+            
+            targets.Add(sisadmin1);
             listBox1.Items.Add(invoker.Skill1(targets));
             LableUpdate();
             ProgresBarUpdate();
@@ -217,34 +197,33 @@ namespace rpg
 
         private void button11_Click(object sender, EventArgs e)
         {
-            List<Character> targets = new List<Character>();
-            targets.Add(titan1);
-            listBox1.Items.Add(sisadmin.Skill1(targets));
-            LableUpdate();
-            ProgresBarUpdate();
-
+            button11.Visible = false;
+            button9.Visible = false;
+            button10.Visible = false;
+            button1.Visible = false;
+            button3.Visible = true;
+            button7.Visible = true;
+            button12.Visible = true;
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            List<Character> targets = new List<Character>();
-            targets.Add(titan1);
-            listBox1.Items.Add(Ninjos.Skill1(targets));
-            LableUpdate();
-            ProgresBarUpdate();
+
+            button11.Visible = false;
+            button9.Visible = false;
+            button10.Visible = false;
+            button1.Visible = false;
+            button2.Visible = true;
+            button6.Visible = true;
+            button4.Visible = true;
+            button5.Visible = true;
         }
 
-        private void button2_Click(object sender, EventArgs e)
-        {
-            List<Character> targets = new List<Character>();
-            targets.Add(titan1);
-            listBox1.Items.Add(cheater.Skill1(targets));
-            LableUpdate();
-            ProgresBarUpdate();
-        }
+       
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            
             ProgressBarSet();
             LableUpdate();
             ProgresBarUpdate();
@@ -253,6 +232,105 @@ namespace rpg
         private void label1_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            List<Character> targets = new List<Character>();
+            targets.Add(titan1);
+            listBox1.Items.Add(Ninjos.Skill1(targets));
+            LableUpdate();
+            ProgresBarUpdate();
+            button1.Visible = true;
+            button2.Visible = false;
+            button6.Visible = false;
+            button4.Visible = false;
+            button5.Visible = false;
+            button11.Visible = true;
+            button9.Visible = true;
+            button10.Visible = true;
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            List<Character> targets = new List<Character>();
+            targets.Add(sisadmin1);
+            listBox1.Items.Add(Ninjos.Skill1(targets));
+            LableUpdate();
+            ProgresBarUpdate();
+            button1.Visible = true;
+            button2.Visible = false;
+            button6.Visible = false;
+            button4.Visible = false;
+            button5.Visible = false;
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            List<Character> targets = new List<Character>();
+            targets.Add(Ninjos1);
+            listBox1.Items.Add(Ninjos.Skill1(targets));
+            LableUpdate();
+            ProgresBarUpdate();
+            button1.Visible = true;
+            button2.Visible = false;
+            button6.Visible = false;
+            button4.Visible = false;
+            button5.Visible = false;
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            List<Character> targets = new List<Character>();
+            targets.Add(invoker1);
+            listBox1.Items.Add(Ninjos.Skill1(targets));
+            LableUpdate();
+            ProgresBarUpdate();
+            button1.Visible = true;
+            button2.Visible = false;
+            button6.Visible = false;
+            button4.Visible = false;
+            button5.Visible = false;
+
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            List<Character> targets = new List<Character>();
+            targets.Add(Ninjos);
+            listBox1.Items.Add(sisadmin.Skill1(targets));
+            LableUpdate();
+            ProgresBarUpdate();
+            button11.Visible = true;
+            button3.Visible = false;
+            button7.Visible = false;
+            button12.Visible = false;
+        }
+
+        private void button12_Click(object sender, EventArgs e)
+        {
+            List<Character> targets = new List<Character>();
+            targets.Add(titan);
+            listBox1.Items.Add(sisadmin.Skill1(targets));
+            LableUpdate();
+            ProgresBarUpdate();
+            button11.Visible = true;
+            button3.Visible = false;
+            button7.Visible = false;
+            button12.Visible = false;
+        }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            List<Character> targets = new List<Character>();
+            targets.Add(invoker);
+            listBox1.Items.Add(sisadmin.Skill1(targets));
+            LableUpdate();
+            ProgresBarUpdate();
+            button11.Visible = true;
+            button3.Visible = false;
+            button7.Visible = false;
+            button12.Visible = false;
         }
 
     }

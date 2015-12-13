@@ -33,7 +33,6 @@
             this.button9 = new System.Windows.Forms.Button();
             this.button11 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
             this.label1hp = new System.Windows.Forms.Label();
             this.label1mana = new System.Windows.Forms.Label();
             this.label1arm = new System.Windows.Forms.Label();
@@ -45,13 +44,7 @@
             this.label4hp = new System.Windows.Forms.Label();
             this.label4mana = new System.Windows.Forms.Label();
             this.label4arm = new System.Windows.Forms.Label();
-            this.label5hp = new System.Windows.Forms.Label();
-            this.label5mana = new System.Windows.Forms.Label();
-            this.label5arm = new System.Windows.Forms.Label();
             this.label2arm = new System.Windows.Forms.Label();
-            this.Anlabel5arm = new System.Windows.Forms.Label();
-            this.Anlabel5mana = new System.Windows.Forms.Label();
-            this.Anlabel5hp = new System.Windows.Forms.Label();
             this.Anlabel4arm = new System.Windows.Forms.Label();
             this.Anlabel4mana = new System.Windows.Forms.Label();
             this.Anlabel4hp = new System.Windows.Forms.Label();
@@ -82,26 +75,32 @@
             this.progressBar14 = new System.Windows.Forms.ProgressBar();
             this.progressBar15 = new System.Windows.Forms.ProgressBar();
             this.progressBar16 = new System.Windows.Forms.ProgressBar();
-            this.progressBar17 = new System.Windows.Forms.ProgressBar();
-            this.progressBar18 = new System.Windows.Forms.ProgressBar();
-            this.progressBar19 = new System.Windows.Forms.ProgressBar();
-            this.progressBar20 = new System.Windows.Forms.ProgressBar();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button4 = new System.Windows.Forms.Button();
+            this.button5 = new System.Windows.Forms.Button();
+            this.button6 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
+            this.button7 = new System.Windows.Forms.Button();
+            this.button12 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // listBox1
             // 
             this.listBox1.FormattingEnabled = true;
-            this.listBox1.Location = new System.Drawing.Point(12, 11);
+            this.listBox1.ItemHeight = 20;
+            this.listBox1.Location = new System.Drawing.Point(18, 17);
+            this.listBox1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(273, 615);
+            this.listBox1.Size = new System.Drawing.Size(408, 764);
             this.listBox1.TabIndex = 0;
             this.listBox1.SelectedIndexChanged += new System.EventHandler(this.listBox1_SelectedIndexChanged);
             // 
             // button10
             // 
-            this.button10.Location = new System.Drawing.Point(567, 22);
+            this.button10.Location = new System.Drawing.Point(850, 34);
+            this.button10.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.button10.Name = "button10";
-            this.button10.Size = new System.Drawing.Size(98, 69);
+            this.button10.Size = new System.Drawing.Size(147, 106);
             this.button10.TabIndex = 6;
             this.button10.Text = "Каст Акса";
             this.button10.UseVisualStyleBackColor = true;
@@ -109,9 +108,10 @@
             // 
             // button9
             // 
-            this.button9.Location = new System.Drawing.Point(567, 143);
+            this.button9.Location = new System.Drawing.Point(850, 220);
+            this.button9.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(98, 69);
+            this.button9.Size = new System.Drawing.Size(147, 106);
             this.button9.TabIndex = 11;
             this.button9.Text = "Каст Инвокера";
             this.button9.UseVisualStyleBackColor = true;
@@ -119,9 +119,10 @@
             // 
             // button11
             // 
-            this.button11.Location = new System.Drawing.Point(567, 265);
+            this.button11.Location = new System.Drawing.Point(850, 408);
+            this.button11.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.button11.Name = "button11";
-            this.button11.Size = new System.Drawing.Size(98, 69);
+            this.button11.Size = new System.Drawing.Size(147, 106);
             this.button11.TabIndex = 12;
             this.button11.Text = "Каст Витч Доктора";
             this.button11.UseVisualStyleBackColor = true;
@@ -129,283 +130,241 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(567, 404);
+            this.button1.Location = new System.Drawing.Point(850, 622);
+            this.button1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(98, 69);
+            this.button1.Size = new System.Drawing.Size(147, 106);
             this.button1.TabIndex = 13;
             this.button1.Text = "Каст БХ";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // button2
-            // 
-            this.button2.Location = new System.Drawing.Point(567, 526);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(98, 69);
-            this.button2.TabIndex = 14;
-            this.button2.Text = "GG WP";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
-            // 
             // label1hp
             // 
             this.label1hp.AutoSize = true;
-            this.label1hp.Location = new System.Drawing.Point(473, 14);
+            this.label1hp.Location = new System.Drawing.Point(710, 22);
+            this.label1hp.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1hp.Name = "label1hp";
-            this.label1hp.Size = new System.Drawing.Size(35, 13);
+            this.label1hp.Size = new System.Drawing.Size(53, 20);
             this.label1hp.TabIndex = 15;
             this.label1hp.Text = "label1";
             // 
             // label1mana
             // 
             this.label1mana.AutoSize = true;
-            this.label1mana.Location = new System.Drawing.Point(473, 50);
+            this.label1mana.Location = new System.Drawing.Point(710, 77);
+            this.label1mana.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1mana.Name = "label1mana";
-            this.label1mana.Size = new System.Drawing.Size(35, 13);
+            this.label1mana.Size = new System.Drawing.Size(53, 20);
             this.label1mana.TabIndex = 16;
             this.label1mana.Text = "label2";
             // 
             // label1arm
             // 
             this.label1arm.AutoSize = true;
-            this.label1arm.Location = new System.Drawing.Point(469, 89);
+            this.label1arm.Location = new System.Drawing.Point(704, 137);
+            this.label1arm.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1arm.Name = "label1arm";
-            this.label1arm.Size = new System.Drawing.Size(35, 13);
+            this.label1arm.Size = new System.Drawing.Size(53, 20);
             this.label1arm.TabIndex = 17;
             this.label1arm.Text = "label3";
             // 
             // label2hp
             // 
             this.label2hp.AutoSize = true;
-            this.label2hp.Location = new System.Drawing.Point(463, 132);
+            this.label2hp.Location = new System.Drawing.Point(694, 203);
+            this.label2hp.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2hp.Name = "label2hp";
-            this.label2hp.Size = new System.Drawing.Size(35, 13);
+            this.label2hp.Size = new System.Drawing.Size(53, 20);
             this.label2hp.TabIndex = 18;
             this.label2hp.Text = "label4";
             // 
             // label2mana
             // 
             this.label2mana.AutoSize = true;
-            this.label2mana.Location = new System.Drawing.Point(469, 171);
+            this.label2mana.Location = new System.Drawing.Point(704, 263);
+            this.label2mana.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2mana.Name = "label2mana";
-            this.label2mana.Size = new System.Drawing.Size(35, 13);
+            this.label2mana.Size = new System.Drawing.Size(53, 20);
             this.label2mana.TabIndex = 19;
             this.label2mana.Text = "label5";
             // 
             // label3hp
             // 
             this.label3hp.AutoSize = true;
-            this.label3hp.Location = new System.Drawing.Point(463, 254);
+            this.label3hp.Location = new System.Drawing.Point(694, 391);
+            this.label3hp.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3hp.Name = "label3hp";
-            this.label3hp.Size = new System.Drawing.Size(35, 13);
+            this.label3hp.Size = new System.Drawing.Size(53, 20);
             this.label3hp.TabIndex = 21;
             this.label3hp.Text = "label7";
             // 
             // label3mana
             // 
             this.label3mana.AutoSize = true;
-            this.label3mana.Location = new System.Drawing.Point(463, 293);
+            this.label3mana.Location = new System.Drawing.Point(694, 451);
+            this.label3mana.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3mana.Name = "label3mana";
-            this.label3mana.Size = new System.Drawing.Size(35, 13);
+            this.label3mana.Size = new System.Drawing.Size(53, 20);
             this.label3mana.TabIndex = 22;
             this.label3mana.Text = "label8";
             // 
             // label3arm
             // 
             this.label3arm.AutoSize = true;
-            this.label3arm.Location = new System.Drawing.Point(463, 332);
+            this.label3arm.Location = new System.Drawing.Point(694, 511);
+            this.label3arm.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3arm.Name = "label3arm";
-            this.label3arm.Size = new System.Drawing.Size(35, 13);
+            this.label3arm.Size = new System.Drawing.Size(53, 20);
             this.label3arm.TabIndex = 23;
             this.label3arm.Text = "label9";
             // 
             // label4hp
             // 
             this.label4hp.AutoSize = true;
-            this.label4hp.Location = new System.Drawing.Point(463, 393);
+            this.label4hp.Location = new System.Drawing.Point(694, 605);
+            this.label4hp.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4hp.Name = "label4hp";
-            this.label4hp.Size = new System.Drawing.Size(41, 13);
+            this.label4hp.Size = new System.Drawing.Size(62, 20);
             this.label4hp.TabIndex = 24;
             this.label4hp.Text = "label10";
             // 
             // label4mana
             // 
             this.label4mana.AutoSize = true;
-            this.label4mana.Location = new System.Drawing.Point(467, 432);
+            this.label4mana.Location = new System.Drawing.Point(700, 665);
+            this.label4mana.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4mana.Name = "label4mana";
-            this.label4mana.Size = new System.Drawing.Size(41, 13);
+            this.label4mana.Size = new System.Drawing.Size(62, 20);
             this.label4mana.TabIndex = 25;
             this.label4mana.Text = "label11";
             // 
             // label4arm
             // 
             this.label4arm.AutoSize = true;
-            this.label4arm.Location = new System.Drawing.Point(463, 471);
+            this.label4arm.Location = new System.Drawing.Point(694, 725);
+            this.label4arm.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4arm.Name = "label4arm";
-            this.label4arm.Size = new System.Drawing.Size(41, 13);
+            this.label4arm.Size = new System.Drawing.Size(62, 20);
             this.label4arm.TabIndex = 26;
             this.label4arm.Text = "label12";
-            // 
-            // label5hp
-            // 
-            this.label5hp.AutoSize = true;
-            this.label5hp.Location = new System.Drawing.Point(463, 515);
-            this.label5hp.Name = "label5hp";
-            this.label5hp.Size = new System.Drawing.Size(41, 13);
-            this.label5hp.TabIndex = 27;
-            this.label5hp.Text = "label13";
-            // 
-            // label5mana
-            // 
-            this.label5mana.AutoSize = true;
-            this.label5mana.Location = new System.Drawing.Point(463, 554);
-            this.label5mana.Name = "label5mana";
-            this.label5mana.Size = new System.Drawing.Size(41, 13);
-            this.label5mana.TabIndex = 28;
-            this.label5mana.Text = "label14";
-            // 
-            // label5arm
-            // 
-            this.label5arm.AutoSize = true;
-            this.label5arm.Location = new System.Drawing.Point(463, 593);
-            this.label5arm.Name = "label5arm";
-            this.label5arm.Size = new System.Drawing.Size(41, 13);
-            this.label5arm.TabIndex = 29;
-            this.label5arm.Text = "label15";
             // 
             // label2arm
             // 
             this.label2arm.AutoSize = true;
-            this.label2arm.Location = new System.Drawing.Point(463, 212);
+            this.label2arm.Location = new System.Drawing.Point(694, 326);
+            this.label2arm.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2arm.Name = "label2arm";
-            this.label2arm.Size = new System.Drawing.Size(35, 13);
+            this.label2arm.Size = new System.Drawing.Size(53, 20);
             this.label2arm.TabIndex = 30;
             this.label2arm.Text = "label6";
-            // 
-            // Anlabel5arm
-            // 
-            this.Anlabel5arm.AutoSize = true;
-            this.Anlabel5arm.Location = new System.Drawing.Point(345, 593);
-            this.Anlabel5arm.Name = "Anlabel5arm";
-            this.Anlabel5arm.Size = new System.Drawing.Size(35, 13);
-            this.Anlabel5arm.TabIndex = 31;
-            this.Anlabel5arm.Text = "label1";
-            // 
-            // Anlabel5mana
-            // 
-            this.Anlabel5mana.AutoSize = true;
-            this.Anlabel5mana.Location = new System.Drawing.Point(344, 554);
-            this.Anlabel5mana.Name = "Anlabel5mana";
-            this.Anlabel5mana.Size = new System.Drawing.Size(35, 13);
-            this.Anlabel5mana.TabIndex = 32;
-            this.Anlabel5mana.Text = "label1";
-            // 
-            // Anlabel5hp
-            // 
-            this.Anlabel5hp.AutoSize = true;
-            this.Anlabel5hp.Location = new System.Drawing.Point(344, 515);
-            this.Anlabel5hp.Name = "Anlabel5hp";
-            this.Anlabel5hp.Size = new System.Drawing.Size(35, 13);
-            this.Anlabel5hp.TabIndex = 33;
-            this.Anlabel5hp.Text = "label1";
             // 
             // Anlabel4arm
             // 
             this.Anlabel4arm.AutoSize = true;
-            this.Anlabel4arm.Location = new System.Drawing.Point(344, 471);
+            this.Anlabel4arm.Location = new System.Drawing.Point(516, 725);
+            this.Anlabel4arm.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.Anlabel4arm.Name = "Anlabel4arm";
-            this.Anlabel4arm.Size = new System.Drawing.Size(35, 13);
+            this.Anlabel4arm.Size = new System.Drawing.Size(53, 20);
             this.Anlabel4arm.TabIndex = 34;
             this.Anlabel4arm.Text = "label1";
             // 
             // Anlabel4mana
             // 
             this.Anlabel4mana.AutoSize = true;
-            this.Anlabel4mana.Location = new System.Drawing.Point(344, 432);
+            this.Anlabel4mana.Location = new System.Drawing.Point(516, 665);
+            this.Anlabel4mana.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.Anlabel4mana.Name = "Anlabel4mana";
-            this.Anlabel4mana.Size = new System.Drawing.Size(35, 13);
+            this.Anlabel4mana.Size = new System.Drawing.Size(53, 20);
             this.Anlabel4mana.TabIndex = 35;
             this.Anlabel4mana.Text = "label1";
             // 
             // Anlabel4hp
             // 
             this.Anlabel4hp.AutoSize = true;
-            this.Anlabel4hp.Location = new System.Drawing.Point(344, 393);
+            this.Anlabel4hp.Location = new System.Drawing.Point(516, 605);
+            this.Anlabel4hp.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.Anlabel4hp.Name = "Anlabel4hp";
-            this.Anlabel4hp.Size = new System.Drawing.Size(35, 13);
+            this.Anlabel4hp.Size = new System.Drawing.Size(53, 20);
             this.Anlabel4hp.TabIndex = 36;
             this.Anlabel4hp.Text = "label1";
             // 
             // Anlabel3arm
             // 
             this.Anlabel3arm.AutoSize = true;
-            this.Anlabel3arm.Location = new System.Drawing.Point(344, 332);
+            this.Anlabel3arm.Location = new System.Drawing.Point(516, 511);
+            this.Anlabel3arm.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.Anlabel3arm.Name = "Anlabel3arm";
-            this.Anlabel3arm.Size = new System.Drawing.Size(35, 13);
+            this.Anlabel3arm.Size = new System.Drawing.Size(53, 20);
             this.Anlabel3arm.TabIndex = 37;
             this.Anlabel3arm.Text = "label1";
             // 
             // Anlabel3mana
             // 
             this.Anlabel3mana.AutoSize = true;
-            this.Anlabel3mana.Location = new System.Drawing.Point(345, 293);
+            this.Anlabel3mana.Location = new System.Drawing.Point(518, 451);
+            this.Anlabel3mana.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.Anlabel3mana.Name = "Anlabel3mana";
-            this.Anlabel3mana.Size = new System.Drawing.Size(35, 13);
+            this.Anlabel3mana.Size = new System.Drawing.Size(53, 20);
             this.Anlabel3mana.TabIndex = 38;
             this.Anlabel3mana.Text = "label1";
             // 
             // Anlabel3hp
             // 
             this.Anlabel3hp.AutoSize = true;
-            this.Anlabel3hp.Location = new System.Drawing.Point(345, 256);
+            this.Anlabel3hp.Location = new System.Drawing.Point(518, 394);
+            this.Anlabel3hp.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.Anlabel3hp.Name = "Anlabel3hp";
-            this.Anlabel3hp.Size = new System.Drawing.Size(35, 13);
+            this.Anlabel3hp.Size = new System.Drawing.Size(53, 20);
             this.Anlabel3hp.TabIndex = 39;
             this.Anlabel3hp.Text = "label1";
             // 
             // Anlabel2arm
             // 
             this.Anlabel2arm.AutoSize = true;
-            this.Anlabel2arm.Location = new System.Drawing.Point(345, 214);
+            this.Anlabel2arm.Location = new System.Drawing.Point(518, 329);
+            this.Anlabel2arm.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.Anlabel2arm.Name = "Anlabel2arm";
-            this.Anlabel2arm.Size = new System.Drawing.Size(35, 13);
+            this.Anlabel2arm.Size = new System.Drawing.Size(53, 20);
             this.Anlabel2arm.TabIndex = 40;
             this.Anlabel2arm.Text = "label1";
             // 
             // Anlabel2mana
             // 
             this.Anlabel2mana.AutoSize = true;
-            this.Anlabel2mana.Location = new System.Drawing.Point(345, 171);
+            this.Anlabel2mana.Location = new System.Drawing.Point(518, 263);
+            this.Anlabel2mana.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.Anlabel2mana.Name = "Anlabel2mana";
-            this.Anlabel2mana.Size = new System.Drawing.Size(35, 13);
+            this.Anlabel2mana.Size = new System.Drawing.Size(53, 20);
             this.Anlabel2mana.TabIndex = 41;
             this.Anlabel2mana.Text = "label1";
             // 
             // Anlabel2hp
             // 
             this.Anlabel2hp.AutoSize = true;
-            this.Anlabel2hp.Location = new System.Drawing.Point(344, 132);
+            this.Anlabel2hp.Location = new System.Drawing.Point(516, 203);
+            this.Anlabel2hp.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.Anlabel2hp.Name = "Anlabel2hp";
-            this.Anlabel2hp.Size = new System.Drawing.Size(35, 13);
+            this.Anlabel2hp.Size = new System.Drawing.Size(53, 20);
             this.Anlabel2hp.TabIndex = 42;
             this.Anlabel2hp.Text = "label1";
             // 
             // Anlabel1arm
             // 
             this.Anlabel1arm.AutoSize = true;
-            this.Anlabel1arm.Location = new System.Drawing.Point(344, 89);
+            this.Anlabel1arm.Location = new System.Drawing.Point(516, 137);
+            this.Anlabel1arm.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.Anlabel1arm.Name = "Anlabel1arm";
-            this.Anlabel1arm.Size = new System.Drawing.Size(35, 13);
+            this.Anlabel1arm.Size = new System.Drawing.Size(53, 20);
             this.Anlabel1arm.TabIndex = 43;
             this.Anlabel1arm.Text = "label1";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(344, -2);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label1.Location = new System.Drawing.Point(516, -3);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(36, 13);
+            this.label1.Size = new System.Drawing.Size(57, 20);
             this.label1.TabIndex = 46;
             this.label1.Text = "враги";
             this.label1.Click += new System.EventHandler(this.label1_Click);
@@ -413,27 +372,28 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(463, -2);
-            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label2.Location = new System.Drawing.Point(694, -3);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(57, 13);
+            this.label2.Size = new System.Drawing.Size(89, 20);
             this.label2.TabIndex = 47;
             this.label2.Text = "союзники";
             // 
             // progressBar1
             // 
             this.progressBar1.ForeColor = System.Drawing.Color.Red;
-            this.progressBar1.Location = new System.Drawing.Point(326, 27);
+            this.progressBar1.Location = new System.Drawing.Point(489, 42);
+            this.progressBar1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.progressBar1.Name = "progressBar1";
-            this.progressBar1.Size = new System.Drawing.Size(70, 20);
+            this.progressBar1.Size = new System.Drawing.Size(105, 31);
             this.progressBar1.TabIndex = 48;
             // 
             // Anlabel1mana
             // 
             this.Anlabel1mana.AutoSize = true;
-            this.Anlabel1mana.Location = new System.Drawing.Point(344, 50);
+            this.Anlabel1mana.Location = new System.Drawing.Point(516, 77);
+            this.Anlabel1mana.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.Anlabel1mana.Name = "Anlabel1mana";
-            this.Anlabel1mana.Size = new System.Drawing.Size(35, 13);
+            this.Anlabel1mana.Size = new System.Drawing.Size(53, 20);
             this.Anlabel1mana.TabIndex = 44;
             this.Anlabel1mana.Text = "label1";
             // 
@@ -441,9 +401,10 @@
             // 
             this.Anlabel1hp.BackColor = System.Drawing.Color.Transparent;
             this.Anlabel1hp.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Anlabel1hp.Location = new System.Drawing.Point(344, 11);
+            this.Anlabel1hp.Location = new System.Drawing.Point(516, 17);
+            this.Anlabel1hp.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.Anlabel1hp.Name = "Anlabel1hp";
-            this.Anlabel1hp.Size = new System.Drawing.Size(52, 15);
+            this.Anlabel1hp.Size = new System.Drawing.Size(78, 23);
             this.Anlabel1hp.TabIndex = 45;
             this.Anlabel1hp.Text = "label1";
             this.Anlabel1hp.UseCompatibleTextRendering = true;
@@ -451,164 +412,227 @@
             // progressBar2
             // 
             this.progressBar2.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.progressBar2.Location = new System.Drawing.Point(326, 66);
+            this.progressBar2.Location = new System.Drawing.Point(489, 102);
+            this.progressBar2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.progressBar2.Name = "progressBar2";
-            this.progressBar2.Size = new System.Drawing.Size(70, 20);
+            this.progressBar2.Size = new System.Drawing.Size(105, 31);
             this.progressBar2.TabIndex = 49;
             // 
             // progressBar4
             // 
             this.progressBar4.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.progressBar4.Location = new System.Drawing.Point(450, 66);
+            this.progressBar4.Location = new System.Drawing.Point(675, 102);
+            this.progressBar4.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.progressBar4.Name = "progressBar4";
-            this.progressBar4.Size = new System.Drawing.Size(70, 20);
+            this.progressBar4.Size = new System.Drawing.Size(105, 31);
             this.progressBar4.TabIndex = 51;
             // 
             // progressBar3
             // 
             this.progressBar3.ForeColor = System.Drawing.Color.Red;
-            this.progressBar3.Location = new System.Drawing.Point(450, 27);
+            this.progressBar3.Location = new System.Drawing.Point(675, 42);
+            this.progressBar3.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.progressBar3.Name = "progressBar3";
-            this.progressBar3.Size = new System.Drawing.Size(70, 20);
+            this.progressBar3.Size = new System.Drawing.Size(105, 31);
             this.progressBar3.TabIndex = 52;
             // 
             // progressBar5
             // 
             this.progressBar5.ForeColor = System.Drawing.Color.Red;
-            this.progressBar5.Location = new System.Drawing.Point(326, 148);
+            this.progressBar5.Location = new System.Drawing.Point(489, 228);
+            this.progressBar5.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.progressBar5.Name = "progressBar5";
-            this.progressBar5.Size = new System.Drawing.Size(70, 20);
+            this.progressBar5.Size = new System.Drawing.Size(105, 31);
             this.progressBar5.TabIndex = 53;
             // 
             // progressBar6
             // 
             this.progressBar6.ForeColor = System.Drawing.Color.Red;
-            this.progressBar6.Location = new System.Drawing.Point(450, 148);
+            this.progressBar6.Location = new System.Drawing.Point(675, 228);
+            this.progressBar6.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.progressBar6.Name = "progressBar6";
-            this.progressBar6.Size = new System.Drawing.Size(70, 20);
+            this.progressBar6.Size = new System.Drawing.Size(105, 31);
             this.progressBar6.TabIndex = 54;
             // 
             // progressBar7
             // 
             this.progressBar7.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.progressBar7.Location = new System.Drawing.Point(450, 189);
+            this.progressBar7.Location = new System.Drawing.Point(675, 291);
+            this.progressBar7.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.progressBar7.Name = "progressBar7";
-            this.progressBar7.Size = new System.Drawing.Size(70, 20);
+            this.progressBar7.Size = new System.Drawing.Size(105, 31);
             this.progressBar7.TabIndex = 55;
             // 
             // progressBar8
             // 
             this.progressBar8.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.progressBar8.Location = new System.Drawing.Point(326, 187);
+            this.progressBar8.Location = new System.Drawing.Point(489, 288);
+            this.progressBar8.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.progressBar8.Name = "progressBar8";
-            this.progressBar8.Size = new System.Drawing.Size(70, 20);
+            this.progressBar8.Size = new System.Drawing.Size(105, 31);
             this.progressBar8.TabIndex = 56;
             // 
             // progressBar9
             // 
             this.progressBar9.ForeColor = System.Drawing.Color.Red;
-            this.progressBar9.Location = new System.Drawing.Point(450, 270);
+            this.progressBar9.Location = new System.Drawing.Point(675, 415);
+            this.progressBar9.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.progressBar9.Name = "progressBar9";
-            this.progressBar9.Size = new System.Drawing.Size(70, 20);
+            this.progressBar9.Size = new System.Drawing.Size(105, 31);
             this.progressBar9.TabIndex = 57;
             // 
             // progressBar10
             // 
             this.progressBar10.ForeColor = System.Drawing.Color.Red;
-            this.progressBar10.Location = new System.Drawing.Point(326, 270);
+            this.progressBar10.Location = new System.Drawing.Point(489, 415);
+            this.progressBar10.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.progressBar10.Name = "progressBar10";
-            this.progressBar10.Size = new System.Drawing.Size(70, 20);
+            this.progressBar10.Size = new System.Drawing.Size(105, 31);
             this.progressBar10.TabIndex = 58;
             // 
             // progressBar11
             // 
             this.progressBar11.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.progressBar11.Location = new System.Drawing.Point(450, 309);
+            this.progressBar11.Location = new System.Drawing.Point(675, 475);
+            this.progressBar11.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.progressBar11.Name = "progressBar11";
-            this.progressBar11.Size = new System.Drawing.Size(70, 20);
+            this.progressBar11.Size = new System.Drawing.Size(105, 31);
             this.progressBar11.TabIndex = 59;
             // 
             // progressBar12
             // 
             this.progressBar12.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.progressBar12.Location = new System.Drawing.Point(326, 309);
+            this.progressBar12.Location = new System.Drawing.Point(489, 475);
+            this.progressBar12.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.progressBar12.Name = "progressBar12";
-            this.progressBar12.Size = new System.Drawing.Size(70, 20);
+            this.progressBar12.Size = new System.Drawing.Size(105, 31);
             this.progressBar12.TabIndex = 60;
             // 
             // progressBar13
             // 
             this.progressBar13.ForeColor = System.Drawing.Color.Red;
-            this.progressBar13.Location = new System.Drawing.Point(450, 409);
+            this.progressBar13.Location = new System.Drawing.Point(675, 629);
+            this.progressBar13.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.progressBar13.Name = "progressBar13";
-            this.progressBar13.Size = new System.Drawing.Size(70, 20);
+            this.progressBar13.Size = new System.Drawing.Size(105, 31);
             this.progressBar13.TabIndex = 61;
             // 
             // progressBar14
             // 
             this.progressBar14.ForeColor = System.Drawing.Color.Red;
-            this.progressBar14.Location = new System.Drawing.Point(326, 409);
+            this.progressBar14.Location = new System.Drawing.Point(489, 629);
+            this.progressBar14.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.progressBar14.Name = "progressBar14";
-            this.progressBar14.Size = new System.Drawing.Size(70, 20);
+            this.progressBar14.Size = new System.Drawing.Size(105, 31);
             this.progressBar14.TabIndex = 62;
             // 
             // progressBar15
             // 
             this.progressBar15.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.progressBar15.Location = new System.Drawing.Point(326, 448);
+            this.progressBar15.Location = new System.Drawing.Point(489, 689);
+            this.progressBar15.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.progressBar15.Name = "progressBar15";
-            this.progressBar15.Size = new System.Drawing.Size(70, 20);
+            this.progressBar15.Size = new System.Drawing.Size(105, 31);
             this.progressBar15.TabIndex = 63;
             // 
             // progressBar16
             // 
             this.progressBar16.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.progressBar16.Location = new System.Drawing.Point(450, 448);
+            this.progressBar16.Location = new System.Drawing.Point(675, 689);
+            this.progressBar16.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.progressBar16.Name = "progressBar16";
-            this.progressBar16.Size = new System.Drawing.Size(70, 20);
+            this.progressBar16.Size = new System.Drawing.Size(105, 31);
             this.progressBar16.TabIndex = 64;
             // 
-            // progressBar17
+            // button2
             // 
-            this.progressBar17.ForeColor = System.Drawing.Color.Red;
-            this.progressBar17.Location = new System.Drawing.Point(450, 531);
-            this.progressBar17.Name = "progressBar17";
-            this.progressBar17.Size = new System.Drawing.Size(70, 20);
-            this.progressBar17.TabIndex = 65;
+            this.button2.Location = new System.Drawing.Point(489, 160);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(105, 29);
+            this.button2.TabIndex = 65;
+            this.button2.Text = "Titan";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Visible = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
-            // progressBar18
+            // button4
             // 
-            this.progressBar18.ForeColor = System.Drawing.Color.Red;
-            this.progressBar18.Location = new System.Drawing.Point(326, 531);
-            this.progressBar18.Name = "progressBar18";
-            this.progressBar18.Size = new System.Drawing.Size(70, 20);
-            this.progressBar18.TabIndex = 66;
+            this.button4.Location = new System.Drawing.Point(489, 748);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(114, 29);
+            this.button4.TabIndex = 66;
+            this.button4.Text = "NInjos";
+            this.button4.UseVisualStyleBackColor = true;
+            this.button4.Visible = false;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
-            // progressBar19
+            // button5
             // 
-            this.progressBar19.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.progressBar19.Location = new System.Drawing.Point(450, 570);
-            this.progressBar19.Name = "progressBar19";
-            this.progressBar19.Size = new System.Drawing.Size(70, 20);
-            this.progressBar19.TabIndex = 67;
+            this.button5.Location = new System.Drawing.Point(489, 352);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(114, 29);
+            this.button5.TabIndex = 67;
+            this.button5.Text = "Invoker";
+            this.button5.UseVisualStyleBackColor = true;
+            this.button5.Visible = false;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
-            // progressBar20
+            // button6
             // 
-            this.progressBar20.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.progressBar20.Location = new System.Drawing.Point(326, 570);
-            this.progressBar20.Name = "progressBar20";
-            this.progressBar20.Size = new System.Drawing.Size(70, 20);
-            this.progressBar20.TabIndex = 68;
+            this.button6.Location = new System.Drawing.Point(489, 534);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(114, 29);
+            this.button6.TabIndex = 68;
+            this.button6.Text = "DOktor";
+            this.button6.UseVisualStyleBackColor = true;
+            this.button6.Visible = false;
+            this.button6.Click += new System.EventHandler(this.button6_Click);
+            // 
+            // button3
+            // 
+            this.button3.Location = new System.Drawing.Point(850, 605);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(147, 55);
+            this.button3.TabIndex = 69;
+            this.button3.Text = "ninjos";
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Visible = false;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
+            // 
+            // button7
+            // 
+            this.button7.Location = new System.Drawing.Point(850, 180);
+            this.button7.Name = "button7";
+            this.button7.Size = new System.Drawing.Size(147, 79);
+            this.button7.TabIndex = 70;
+            this.button7.Text = "invoker";
+            this.button7.UseVisualStyleBackColor = true;
+            this.button7.Visible = false;
+            this.button7.Click += new System.EventHandler(this.button7_Click);
+            // 
+            // button12
+            // 
+            this.button12.Location = new System.Drawing.Point(850, 22);
+            this.button12.Name = "button12";
+            this.button12.Size = new System.Drawing.Size(147, 51);
+            this.button12.TabIndex = 72;
+            this.button12.Text = "titan";
+            this.button12.UseVisualStyleBackColor = true;
+            this.button12.Visible = false;
+            this.button12.Click += new System.EventHandler(this.button12_Click);
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(677, 640);
-            this.Controls.Add(this.progressBar20);
-            this.Controls.Add(this.progressBar19);
-            this.Controls.Add(this.progressBar18);
-            this.Controls.Add(this.progressBar17);
+            this.ClientSize = new System.Drawing.Size(1016, 798);
+            this.Controls.Add(this.button12);
+            this.Controls.Add(this.button7);
+            this.Controls.Add(this.button3);
+            this.Controls.Add(this.button6);
+            this.Controls.Add(this.button5);
+            this.Controls.Add(this.button4);
+            this.Controls.Add(this.button2);
             this.Controls.Add(this.progressBar16);
             this.Controls.Add(this.progressBar15);
             this.Controls.Add(this.progressBar14);
@@ -639,13 +663,7 @@
             this.Controls.Add(this.Anlabel4hp);
             this.Controls.Add(this.Anlabel4mana);
             this.Controls.Add(this.Anlabel4arm);
-            this.Controls.Add(this.Anlabel5hp);
-            this.Controls.Add(this.Anlabel5mana);
-            this.Controls.Add(this.Anlabel5arm);
             this.Controls.Add(this.label2arm);
-            this.Controls.Add(this.label5arm);
-            this.Controls.Add(this.label5mana);
-            this.Controls.Add(this.label5hp);
             this.Controls.Add(this.label4arm);
             this.Controls.Add(this.label4mana);
             this.Controls.Add(this.label4hp);
@@ -657,15 +675,15 @@
             this.Controls.Add(this.label1arm);
             this.Controls.Add(this.label1hp);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.button11);
             this.Controls.Add(this.button9);
             this.Controls.Add(this.button10);
             this.Controls.Add(this.listBox1);
             this.DoubleBuffered = true;
+            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "/";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -679,7 +697,6 @@
         private System.Windows.Forms.Button button9;
         private System.Windows.Forms.Button button11;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Label label1hp;
         private System.Windows.Forms.Label label1mana;
         private System.Windows.Forms.Label label1arm;
@@ -691,13 +708,7 @@
         private System.Windows.Forms.Label label4hp;
         private System.Windows.Forms.Label label4mana;
         private System.Windows.Forms.Label label4arm;
-        private System.Windows.Forms.Label label5hp;
-        private System.Windows.Forms.Label label5mana;
-        private System.Windows.Forms.Label label5arm;
         private System.Windows.Forms.Label label2arm;
-        private System.Windows.Forms.Label Anlabel5arm;
-        private System.Windows.Forms.Label Anlabel5mana;
-        private System.Windows.Forms.Label Anlabel5hp;
         private System.Windows.Forms.Label Anlabel4arm;
         private System.Windows.Forms.Label Anlabel4mana;
         private System.Windows.Forms.Label Anlabel4hp;
@@ -728,10 +739,13 @@
         private System.Windows.Forms.ProgressBar progressBar14;
         private System.Windows.Forms.ProgressBar progressBar15;
         private System.Windows.Forms.ProgressBar progressBar16;
-        private System.Windows.Forms.ProgressBar progressBar17;
-        private System.Windows.Forms.ProgressBar progressBar18;
-        private System.Windows.Forms.ProgressBar progressBar19;
-        private System.Windows.Forms.ProgressBar progressBar20;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Button button6;
+        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button button7;
+        private System.Windows.Forms.Button button12;
     }
 }
 

@@ -34,11 +34,21 @@ namespace rpg
             {
                 foreach (Character c in targets)
                 {
-                    c.Hp -= (this.Force - c.Armor);
+                    if (this.Force > c.Armor)
+                    {
+
+
+                        c.Hp -= (this.Force - c.Armor);
+                    }
+
+
+
+
 
                 }
                 Mana = Mana - 200;
-                Hp = Hp - Force + Armor;
+                
+                
                 return "Ничего... сисадмин мне поможет.";
             }
             else { return "Not enought Mana"; }
