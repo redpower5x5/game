@@ -351,5 +351,172 @@ namespace rpg
             button10.Visible = true;
         }
 
+        private void button8_Click(object sender, EventArgs e)
+        {
+            List<Character> targets = new List<Character>();
+            targets.Add(titan);
+            listBox1.Items.Add(titan.Skill1(targets));
+            LableUpdate();
+            ProgresBarUpdate();
+        }
+
+        
+
+        private void button15_Click(object sender, EventArgs e)
+        {
+            List<Character> targets = new List<Character>();
+            targets.Add(titan);
+            targets.Add(Ninjos);
+            targets.Add(invoker1);
+            targets.Add(invoker);
+
+            targets.Add(sisadmin);
+            listBox1.Items.Add(invoker.Skill1(targets));
+            LableUpdate();
+            ProgresBarUpdate();
+        }
+
+        private void button13_Click(object sender, EventArgs e)
+        {
+            button8.Visible = false;
+            button15.Visible = false;
+            button14.Visible = false;
+            button1.Visible = false;
+            button16.Visible = true;
+            button17.Visible = true;
+            button18.Visible = true;
+        }
+
+        private void button14_Click(object sender, EventArgs e)
+        {
+
+            button8.Visible = false;
+            button15.Visible = false;
+            button14.Visible = false;
+            button13.Visible = false;
+            button19.Visible = true;
+            button20.Visible = true;
+            button22.Visible = true;
+            button21.Visible = true;
+        }
+
+
+        private void button19_Click(object sender, EventArgs e)
+        {
+            List<Character> targets = new List<Character>();
+            targets.Add(titan);
+            listBox1.Items.Add(Ninjos.Skill1(targets));
+            LableUpdate();
+            ProgresBarUpdate();
+            button1.Visible = true;
+            button19.Visible = false;
+            button20.Visible = false;
+            button22.Visible = false;
+            button21.Visible = false;
+            button13.Visible = true;
+            button15.Visible = true;
+            button8.Visible = true;
+            button14.Visible = true;
+        }
+
+        private void button20_Click(object sender, EventArgs e)
+        {
+            List<Character> targets = new List<Character>();
+            targets.Add(sisadmin);
+            listBox1.Items.Add(Ninjos.Skill1(targets));
+            LableUpdate();
+            ProgresBarUpdate();
+            button14.Visible = true;
+            button19.Visible = false;
+            button20.Visible = false;
+            button22.Visible = false;
+            button21.Visible = false;
+            button13.Visible = true;
+            button15.Visible = true;
+            button8.Visible = true;
+        }
+
+        private void button22_Click(object sender, EventArgs e)
+        {
+            List<Character> targets = new List<Character>();
+            targets.Add(Ninjos);
+            listBox1.Items.Add(Ninjos.Skill1(targets));
+            LableUpdate();
+            ProgresBarUpdate();
+            button14.Visible = true;
+            button19.Visible = false;
+            button20.Visible = false;
+            button22.Visible = false;
+            button21.Visible = false;
+            button13.Visible = true;
+            button15.Visible = true;
+            button8.Visible = true;
+        }
+
+        private void button21_Click(object sender, EventArgs e)
+        {
+            List<Character> targets = new List<Character>();
+            targets.Add(invoker);
+            listBox1.Items.Add(Ninjos.Skill1(targets));
+            LableUpdate();
+            ProgresBarUpdate();
+            button14.Visible = true;
+            button19.Visible = false;
+            button20.Visible = false;
+            button22.Visible = false;
+            button21.Visible = false;
+            button13.Visible = true;
+            button15.Visible = true;
+            button8.Visible = true;
+
+        }
+
+        private void button16_Click(object sender, EventArgs e)
+        {
+            List<Character> targets = new List<Character>();
+            targets.Add(Ninjos1);
+            listBox1.Items.Add(sisadmin.Skill1(targets));
+            LableUpdate();
+            ProgresBarUpdate();
+            button13.Visible = true;
+            button16.Visible = false;
+            button17.Visible = false;
+            button18.Visible = false;
+            button1.Visible = true;
+            button15.Visible = true;
+            button8.Visible = true;
+        }
+
+        private void button18_Click(object sender, EventArgs e)
+        {
+            List<Character> targets = new List<Character>();
+            targets.Add(titan1);
+            listBox1.Items.Add(sisadmin.Skill1(targets));
+            LableUpdate();
+            ProgresBarUpdate();
+            button13.Visible = true;
+            button16.Visible = false;
+            button17.Visible = false;
+            button18.Visible = false;
+            button14.Visible = true;
+            button15.Visible = true;
+            button8.Visible = true;
+        }
+
+        private void button17_Click(object sender, EventArgs e)
+        {
+            List<Character> targets = new List<Character>();
+            targets.Add(invoker1);
+            listBox1.Items.Add(sisadmin.Skill1(targets));
+            LableUpdate();
+            ProgresBarUpdate();
+            button13.Visible = true;
+            button16.Visible = false;
+            button17.Visible = false;
+            button18.Visible = false;
+            button14.Visible = true;
+            button15.Visible = true;
+            button8.Visible = true;
+        }
     }
 }
