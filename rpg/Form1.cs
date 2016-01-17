@@ -45,6 +45,24 @@ namespace rpg
             
 
         }
+
+
+
+        private void WINCHECK()
+        {
+            if (titan1.Hp == 0 && sisadmin1.Hp == 0 && invoker1.Hp == 0 && Ninjos1.Hp == 0)
+            {
+                MessageBox.Show("Team 1 WIN!!!!");
+            }
+            else if (titan.Hp == 0 && sisadmin.Hp == 0 && invoker.Hp == 0 && Ninjos.Hp == 0)
+            {
+                MessageBox.Show("Team 2 WIN!!!!");
+            }
+        }
+
+        List<Button> Team1 = new List<Button>();
+        List<Button> Team2 = new List<Button>();
+
         private void ProgressBarSet()
         {
             progressBar1.Maximum = titan1.Hp;
@@ -67,6 +85,19 @@ namespace rpg
         }
         private void ProgresBarUpdate()
         {
+
+
+            foreach(var v in Team1)
+            {
+                v.Enabled = true;
+            }
+
+            foreach (var v1 in Team2)
+            {
+                v1.Enabled = false;
+            }
+
+
             if(titan1.Hp > 500)
             {
                 titan1.Hp = 500;
@@ -148,6 +179,8 @@ namespace rpg
             progressBar14.Value = Ninjos1.Hp;
             progressBar15.Value = Ninjos1.Mana;
             progressBar16.Value = Ninjos.Mana;
+
+            WINCHECK();
             
         }
         
@@ -227,6 +260,18 @@ namespace rpg
             ProgressBarSet();
             LableUpdate();
             ProgresBarUpdate();
+            Team1.Add(button1);
+            Team1.Add(button10);
+            Team1.Add(button11);
+            Team1.Add(button9);
+            Team2.Add(button1);
+            Team2.Add(button8);
+            Team2.Add(button15);
+            Team2.Add(button13);
+            Team2.Add(button14);
+
+
+
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -381,7 +426,6 @@ namespace rpg
             button8.Visible = false;
             button15.Visible = false;
             button14.Visible = false;
-            button1.Visible = false;
             button16.Visible = true;
             button17.Visible = true;
             button18.Visible = true;
@@ -485,6 +529,7 @@ namespace rpg
             button1.Visible = true;
             button15.Visible = true;
             button8.Visible = true;
+            button14.Visible = true;
         }
 
         private void button18_Click(object sender, EventArgs e)
